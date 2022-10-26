@@ -31,7 +31,7 @@ class Userr extends Database_connect{
         public function check_existence($username,$password){
                 $stmt = $this->conn()->query("SELECT * FROM userr WHERE username = '$username' and passwordd = '$password'");
                 if($stmt->fetchColumn()>0){
-                //     $this->valid= "<p style='color : red'>Client already exist</p>";
+                //     $this->valid= "<p style='color : red'>Client already exist !!</p>";
                     return FALSE;
                 }else{
                     return TRUE;
